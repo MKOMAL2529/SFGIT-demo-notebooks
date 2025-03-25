@@ -15,7 +15,7 @@ st.write(
 session = Session.builder.getOrCreate()
 
 #  Create an example data frame
-data_frame = session.sql("SELECT * FROM code_schema.accounts_view")
+data_frame = session.sql("SELECT * FROM GIT_INT_DB.INFORMATION_SCHEMA.TABLES")
 
 # Execute the query and convert it into a Pandas data frame
 queried_data = data_frame.to_pandas()
